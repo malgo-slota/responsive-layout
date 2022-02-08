@@ -1,5 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap');
+
 *, *::before, *::after {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;    
+} 
+
+.nav {
+    background: #2E323F;
+    padding-bottom: 0.7em;
+}
+
+.nav__list {
+    text-align: center;
+    padding: 0.4em;
+}
+
+.nav__item {
+    padding: 0.2em;
+}
+
+.nav__link,
+.hero__btn {
+    color: rgb(224,224,226);
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.nav__link--btn,
+.hero__btn {
+    background-color: #A59678;
+    border-radius: 100px;
+    padding: 0.2em 1em;
+}
+
+.hero {
+    background: #3B4050;
+    padding: 0.7em 0 2em 0;
+}
+
+.hero__title {
+    font-size: 4em;
+    color: rgb(224,224,226);
+    line-height: 1;
+}
+
+.hero__title--dark {
+    color: #A59678;
+}
+
+.hero__txt {
+    color: rgb(224,224,226);
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.hero__btn:hover,
+.nav__item:hover,
+.footer-nav__item:hover {
+    opacity: 0.7;
+}
+
+.first-section{
+    background: rgb(224,224,226);
+    text-align: center;
+    padding: 0.7em 0;
+}
+
+.first-section__title {
+    font-family: 'Oswald', sans-serif; 
+    color: #A59678;
+}
+
+.first-section__txt {
+    padding: 0.7em 0;
+}
+
+.second-section__main__title {
+    color: #A59678;
+    margin-top: 0.7em;
+}
+
+.second-section__main__txt {
+    margin: 0.7em 0;
+}
+
+.second-section__side__box {
+    text-align: center;
+    background: #3B4050;
+    margin: 1em;
+    color: rgb(224,224,226);
+}
+
+.second-section__side__title {
+    padding-top: 0.7em;
+}
+
+.second-section__side__txt {
+    padding: 0.7em 0.5em;
+}
+
+.img {
+    width: 100%;
+}
+
+.footer {
+    background: #3B4050;
+    color: rgb(224,224,226);
+    text-align: center;
+}
+
+.footer__title {
+    padding: 0.7em 0;
+}
+
+.footer-nav{
+    padding-top: 0.7em;    
+}
+
+.footer-nav__item {
+    padding: 0.5em;
+}
+
+.footer-nav__link {
+    color: rgb(224,224,226);
+}
+
+

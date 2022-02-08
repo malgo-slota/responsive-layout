@@ -4,108 +4,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Conquering Responsive Layouts</title>
 
     <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
     
-    <nav>
+    <nav class="nav">
         <a href="#">
-            <img src="img/logo.svg" alt="logo">
+            <img src="img/logo.svg" class="logo" alt="logo">
         </a>
-        <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">CONTACT</a></li>
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
         </ul>
-        <ul>
-            <li><a href="#">SIGN IN</a></li>
-            <li><a href="#">SIGN UP</a></li>
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">Sign in</a></li>
+            <li class="nav__item"><a href="#" class="nav__link nav__link--btn">Sign up</a></li>
         </ul>
     </nav>
 
     <section class="hero">
-        <h1>Responsive layouts
-            <span>don't have to be a struggle</span>
+        <h1 class="hero__title">Responsive layouts
+            <span class="hero__title--dark">don't have to be a struggle</span>
         </h1>
         <div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae necessitatibus aliquam earum dignissimos optio dolores architecto ea consequatur, officia, hic reprehenderit molestias! Quisquam, asperiores eum enim soluta eius at optio!</p>
-            <a href="#">I want to learn</a>
+            <p class="hero__txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae necessitatibus aliquam earum dignissimos optio dolores architecto ea consequatur, officia, hic reprehenderit molestias! Quisquam, asperiores eum enim soluta eius at optio!</p>
+            <a href="#" class="hero__btn">I want to learn</a>
         </div>
     </section>
 
-    <section>
-        <div>
-            <h2>Mobile-First</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nobis quos cumque consequatur harum adipisci incidunt ea ullam facere distinctio aliquam atque molestias dignissimos, sapiente non sed qui eaque itaque?</p>
+    <section class="first-section">
+        <div class="col">
+            <h2 class="first-section__title">Mobile-First</h2>
+            <p class="first-section__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nobis quos cumque consequatur harum adipisci incidunt ea ullam facere distinctio aliquam atque molestias dignissimos, sapiente non sed qui eaque itaque?</p>
         </div>
         
-        <div>
-            <h2>Efficient</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magni laudantium sapiente laborum, fuga ratione hic itaque porro architecto accusantium fugiat tenetur facere? Eligendi, similique dicta debitis corrupti eum ratione!</p>
+        <div class="col">
+            <h2 class="first-section__title">Efficient</h2>
+            <p class="first-section__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magni laudantium sapiente laborum, fuga ratione hic itaque porro architecto accusantium fugiat tenetur facere? Eligendi, similique dicta debitis corrupti eum ratione!</p>
         </div>
 
-         <div>
-            <h2>Done right</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolorem quibusdam illo deleniti eligendi earum non vel eius ipsam, fugiat, ut maxime fugit itaque dolorum officiis quam, hic modi soluta!</p>
+         <div class="col">
+            <h2 class="first-section__title">Done right</h2>
+            <p class="first-section__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolorem quibusdam illo deleniti eligendi earum non vel eius ipsam, fugiat, ut maxime fugit itaque dolorum officiis quam, hic modi soluta!</p>
         </div>
     </section>
 
-    <section>
-        <div>
-            <h2>It doesn't have to be so hard</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae rerum a fuga. Commodi, cumque dolore! Sint impedit nam nostrum numquam odio voluptatem? Saepe, iste aut recusandae voluptatibus totam dignissimos nihil.</p>
-            <img src="img/the-image.jpeg" alt="design sketches">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi numquam vero, earum eveniet assumenda repellendus eos tempore obcaecati nobis, ratione iusto, asperiores eum magnam repudiandae laborum? Ipsa recusandae quaerat voluptatibus!</p>
+    <section class="second-section">
+        <div class="second-section__main">
+            <h2 class="second-section__main__title">It doesn't have to be so hard</h2>
+            <p class="second-section__main__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae rerum a fuga. Commodi, cumque dolore! Sint impedit nam nostrum numquam odio voluptatem? Saepe, iste aut recusandae voluptatibus totam dignissimos nihil.</p>
+            <img src="img/the-image.jpeg" alt="design sketches" class="img">
+            <p class="second-section__main__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi numquam vero, earum eveniet assumenda repellendus eos tempore obcaecati nobis, ratione iusto, asperiores eum magnam repudiandae laborum? Ipsa recusandae quaerat voluptatibus!</p>
         </div>
-        <div>
-            <div>
-                <h2>Break it down</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel alias similique repudiandae nostrum. Harum, itaque maiores, eum natus provident earum facilis eaque dolorem inventore error possimus explicabo aut omnis quibusdam.</p>
+        <div class="second-section__side">
+            <div class="second-section__side__box">
+                <h2 class="second-section__side__title">Break it down</h2>
+                <p class="second-section__side__txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel alias similique repudiandae nostrum. Harum, itaque maiores, eum natus provident earum facilis eaque dolorem inventore error possimus explicabo aut omnis quibusdam.</p>
             </div>
-            <div>
-                <h2>Work your way up</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ut, voluptate fugiat nihil vel aspernatur quis non adipisci. Asperiores libero exercitationem recusandae reprehenderit commodi obcaecati nostrum, assumenda sapiente repellat. Ullam.</p>
+            <div class="second-section__side__box">
+                <h2 class="second-section__side__title">Work your way up</h2>
+                <p class="second-section__side__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ut, voluptate fugiat nihil vel aspernatur quis non adipisci. Asperiores libero exercitationem recusandae reprehenderit commodi obcaecati nostrum, assumenda sapiente repellat. Ullam.</p>
             </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores cumque suscipit corrupti beatae fuga totam ducimus nobis commodi aperiam, quod necessitatibus quibusdam quis soluta, dignissimos eveniet dolor distinctio nesciunt magnam?</p>
+            <div class="second-section__side__box">
+                <h2 class="second-section__side__title">Break it down</h2>
+                <p class="second-section__side__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores cumque suscipit corrupti beatae fuga totam ducimus nobis commodi aperiam, quod necessitatibus quibusdam quis soluta, dignissimos eveniet dolor distinctio nesciunt magnam?</p>
             </div>
         </div>
     </section>
 
-    <footer>
-        <h1>Just scratching the surface</h1>
+    <footer class="footer">
+        <h1 class="footer__title">Just scratching the surface</h1>
         <div>
-            <div>
-                <h3></h3>
+            <div class="footer__txt">
+                <h3>About our company</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem amet, quo, ipsum laudantium laborum quod minima accusamus nesciunt voluptas libero ab voluptate commodi assumenda cupiditate at atque consectetur? Rerum, labore.</p>
             </div>
-            <div>
-                <h3>Getting around</h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3>Other things</h3>
-                <ul>
-                    <li><a href="#">Lorem ipsum</a></li>
-                    <li><a href="#">Dolor</a></li>
-                    <li><a href="#">Sit amet</a></li>
-                    <li><a href="#">Consectetur</a></li>
-                </ul>
-            </div>
-            <div>
-                 <h3>And more</h3>
-                <ul>
-                    <li><a href="#">Lorem ipsum</a></li>
-                    <li><a href="#">Dolor</a></li>
-                    <li><a href="#">Sit amet</a></li>
-                    <li><a href="#">Consectetur</a></li>
-                </ul>
+
+            <div class="footer-nav">
+                <div>
+                    <h3>Getting around</h3>
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Home</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">About</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Other things</h3>
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Lorem ipsum</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Dolor</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Sit amet</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Consectetur</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>And more</h3>
+                    <ul class="footer-nav__list">
+                       <li class="footer-nav__item"><a href="#" class="footer-nav__link">Lorem ipsum</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Dolor</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Sit amet</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Consectetur</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
