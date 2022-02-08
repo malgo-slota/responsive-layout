@@ -25,6 +25,8 @@ h1, h2, h3 {
     background: #2E323F;
     padding-bottom: 1em;
     padding-top: 1em;
+    display: flex;
+    flex-direction: column;
 }
 
 .nav-content {
@@ -83,7 +85,6 @@ h1, h2, h3 {
 }
 
 .logo {
-    display: block;
     margin: 0 auto;
 }
 
@@ -155,6 +156,7 @@ h1, h2, h3 {
 
 .second-section__main__title {
     color: #A59678;
+    font-size: 2em;
     margin-top: 0.7em;
 }
 
@@ -191,6 +193,10 @@ h1, h2, h3 {
     padding: 0.7em 0;
 }
 
+.footer__title--dark {
+    color:#A59678;
+}
+
 .footer-nav{
     padding-top: 0.7em;    
 }
@@ -203,4 +209,71 @@ h1, h2, h3 {
     color: rgb(224,224,226);
 }
 
+@media (min-width: 700px){
 
+
+    .nav{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-content {
+        visibility: visible;
+        display: flex;
+        height: auto;
+        position: relative;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .nav__list{
+        display: flex;
+    }
+
+    .nav-toggle{
+        display: none;
+    }
+
+    .hero {
+        display: flex;
+        align-items: center;
+    }
+
+    .hero__title {
+        font-size: 90px;
+    }
+
+    .first-section {
+        display: flex;   
+    }
+
+    .second-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .second-section__side {
+        display: flex;
+    }
+
+    .footer-flex {
+        display: flex;
+    }
+
+    .footer-nav {
+        display: flex;
+    }
+}
+
+@media (min-width: 1000px) {
+    .second-section {
+        flex-direction: row;
+    }
+
+    .second-section__side {
+        flex-direction: column;
+    }
+}
