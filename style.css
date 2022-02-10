@@ -21,6 +21,10 @@ h1, h2, h3 {
     font-family: 'Oswald', sans-serif;    
 } 
 
+p {
+    font-weight: 300;
+}
+
 .nav {
     background: #2E323F;
     padding-bottom: 1em;
@@ -115,6 +119,7 @@ h1, h2, h3 {
 .hero {
     background: #3B4050;
     padding: 0.7em 0 2em 0;
+    text-align: center;
 }
 
 .hero__title {
@@ -154,6 +159,10 @@ h1, h2, h3 {
     padding: 0.7em 0;
 }
 
+.second-section {
+    text-align: center;
+}
+
 .second-section__main__title {
     color: #A59678;
     font-size: 2em;
@@ -168,6 +177,7 @@ h1, h2, h3 {
     text-align: center;
     background: #3B4050;
     margin: 1em;
+    padding: 0.7em;
     color: rgb(224,224,226);
 }
 
@@ -187,6 +197,7 @@ h1, h2, h3 {
     background: #3B4050;
     color: rgb(224,224,226);
     text-align: center;
+    padding: 2em 0.7em;
 }
 
 .footer__title {
@@ -195,6 +206,7 @@ h1, h2, h3 {
 
 .footer__title--dark {
     color:#A59678;
+    padding-bottom: 0.7em;
 }
 
 .footer-nav{
@@ -211,8 +223,8 @@ h1, h2, h3 {
 
 @media (min-width: 700px){
 
-
     .nav{
+        padding: 1em 4em;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
@@ -221,6 +233,8 @@ h1, h2, h3 {
     .nav-content {
         visibility: visible;
         display: flex;
+        justify-content: flex-end;
+        gap: 2em;
         height: auto;
         position: relative;
     }
@@ -231,6 +245,7 @@ h1, h2, h3 {
 
     .nav__list{
         display: flex;
+        gap: 1em;
     }
 
     .nav-toggle{
@@ -239,41 +254,82 @@ h1, h2, h3 {
 
     .hero {
         display: flex;
-        align-items: center;
+        align-items: center; 
+        text-align: left;
     }
 
     .hero__title {
         font-size: 90px;
+        margin: 2.2em 0.2em;
+    }
+
+    .hero__info {
+        width: 90%;
+        margin-right: 4em;
     }
 
     .first-section {
         display: flex;   
+        padding: 5em 2em;
+    }
+
+    .col + .col {
+        margin-left: 1.5em;
     }
 
     .second-section {
         display: flex;
         flex-direction: column;
+        padding: 0.7em 2.5em;
     }
 
     .second-section__side {
         display: flex;
+    }
+
+    .second-section__side__box {
+        margin: 1em 0.2em;
     }
 
     .footer-flex {
         display: flex;
+        justify-content: space-around;
+    }
+
+    .footer__title {
+        font-size: 36px;
+        margin-bottom: 1em;
+    }
+
+    .footer__txt {
+        text-align: left;
+        width: 40%;
     }
 
     .footer-nav {
         display: flex;
+        justify-content: space-around;
+        flex-grow: 2;
     }
 }
 
 @media (min-width: 1000px) {
+    .hero__title {
+        margin-left: 0.7em;
+    }
+
     .second-section {
         flex-direction: row;
+        text-align: left;
     }
 
     .second-section__side {
         flex-direction: column;
+        margin-left: 4em;
+        width: 40%;
+    }
+    
+    .second-section__main {
+        width: 60%;
     }
 }
